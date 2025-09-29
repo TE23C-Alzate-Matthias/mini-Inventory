@@ -1,0 +1,52 @@
+Boss bowser = new();
+Enemy goomba = new();
+
+Player mario = new();
+
+Console.WriteLine(bowser.aura);
+Console.WriteLine(bowser.hp);
+
+// kan göra detta men ger egenskaper för enemy
+Enemy doctorRobotnik = new Boss();
+
+Console.ReadLine();
+
+public class Enemy
+{
+    public int hp;
+    public string name;
+    public int damage;
+    public int aura;
+
+    public Enemy()
+    {
+        hp = 100;
+        damage = 4;
+        aura = 73;
+    }
+
+    public void Attack(Player p)
+    {
+
+    }
+}
+
+public class Boss : Enemy
+{
+
+    public Boss()
+    {
+        hp = 300;
+    }
+
+    public void SpecialAttack(Player p)
+    {
+
+    }
+
+}
+
+public class Player
+{
+
+}
