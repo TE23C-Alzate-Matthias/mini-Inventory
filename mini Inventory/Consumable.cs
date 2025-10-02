@@ -10,7 +10,7 @@ public class Consumable : Item
             p.hp += Random.Shared.Next(10, 26);
             Console.WriteLine($"Your hp is now {p.hp}");
             currentUses--;
-
+            Console.WriteLine($"You have {currentUses} left");
         }
         else
         {

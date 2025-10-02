@@ -18,6 +18,8 @@ public class Enemy
     public int damage;
     public int aura;
 
+    public Weapon weapon = new() {name = "Club"}
+
     public Enemy()
     {
         hp = 100;
@@ -49,4 +51,10 @@ public class Boss : Enemy
 public class Player
 {
 
+}
+
+public class Weapon
+{
+    public string name;
+    public int damage;
 }
